@@ -1,11 +1,9 @@
 import React from "react";
+import Hero from "../hero/Hero";
 
-const Home = () => {
+const Home = ({movies}) => {
     return (
-        <div className="container mt-5">
-        <h1>Welcome to the Movie App</h1>
-        <p>Discover your favorite movies and TV shows.</p>
-        </div>
+        <Hero movies = {movies}></Hero>
     );
     }
 export default Home;
